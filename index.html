@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav {
+                background-color: rgb(251, 251, 251);
+            }
+            .banner{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                
+            }
+            .col-img{
+                width: 100%;
+                height: 400px;
+                filter: brightness(70%);
+                
+            }
+            .col-img-2 {
+                width: 400px;
+                height: auto;
+                margin-top: 25px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
+            }
+            .title {
+                font-family: Arial;
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+                position: absolute;
+            }
+            .navigation {
+                display: flex;
+            }
+            .elements {
+                padding: 10px 10px 10px 10px;
+                font-family: Arial;
+                font-size: 20px;
+                
+                transition: hover 0.5s;
+            }
+            .elements:hover {
+                background-color: #f2f2f2;
+            }
+            .link {
+                font-family: Arial;
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+            .sub {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .search-course {
+                margin-top: 2px;
+                width: 400px;
+                height: 25px;
+                background-color: rgb(251, 251, 251);
+                border-radius: 25px;
+                border: 1px solid rgb(151, 151, 151);
+                padding: 6px 6px 6px 6px;
+                font-family: Arial;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .about {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 20px 20px 20px;
+            }
+            .about-title {
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+            .about-des {
+                padding-left: 0px;
+                padding-right: 18px;
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+            .course-title {
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: bold;
+                padding-bottom: 20px;
+                padding-left: 20px;
+            }
+            .course-img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px 10px 0px 0px;
+            }
+            .course-des {
+                display: flex;
+                padding-left: 15px;
+                padding-right: 15px;
+                justify-content: space-between;
+            }
+            .single-course {
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
+            }
+            .course-text {
+                height: 250px;
+                font-family: Arial;
+                text-align: justify;
+                font-size: 15px;
+                text-justify: newspaper;
+                word-spacing: -0.1em;
+                padding: 5px;
+            }
+            .department {
+                display: flex;
+                height: 65px;
+                align-items: center;
+                font-family: Arial;
+                font-size: 30px;
+                padding-left: 5px;
+            }    
+            .learn {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                justify-content: center;
+            }
+            .learn-button {
+                height: 30px;
+                width: 100px;
+                background-color: rgb(245, 245, 245);
+                border: 1px solid rgb(151, 151, 151);
+                padding-left: 15px;
+                cursor: pointer;
+            }
+            .course-info {
+                display: flex;
+                font-family: Arial;
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+            .clg-contact {
+                margin-top: 20px;
+            }
+            .contact-title {
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: bold;
+                padding-bottom: 10px;
+                padding-left: 20px;
+            }
+            .clg-addresses {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .address {
+                display: flex;
+                font-size: 18px;
+                font-family: Arial;
+                flex-direction: column;
+                width: 250px;
+                border: 1px solid rgb(151, 151, 151);
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .footer {
+                margin-top: 10px;
+                background-color: rgb(100, 100, 100);
+                color: white;
+                display: flex;
+                height: 80px;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial;
+                font-size: 20px;
+            }
+            .course-title-sub {
+                font-size: 18px;
+                font-family: Arial;
+                font-weight: bold;
+                padding-bottom: 10px;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <img class="col-img" src="asutosh-image/asutosh-college-kolkata.jpg" alt="">
+                
+                <div class="title">
+                    Welcome to Asutosh College
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="sub">
+                <div class="navigation">
+                    <div class="elements">
+                        <a class="link" href="#">Home</a>
+                    </div>
+                    <div class="elements">
+                        <a class="link" href="#about">About</a>
+                    </div> 
+                    <div class="elements">
+                        <a class="link" href="#courses">Courses</a>
+                    </div>
+                    <div class="elements">
+                        <a class="link" href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <input class="search-course" type="text" placeholder="Search for a course">
+                </div>
+            </div>
+            
+        </nav>
+        <div class="about" id="about">
+            <div>
+                <div class="about-title">
+                    About Asutosh College
+                </div>
+                <div class="about-des">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asutosh College, located in Kolkata, West Bengal, is a prestigious undergraduate college that has been a cornerstone of education since its establishment in 1916. 
+                    Named after the eminent educationist Sir Asutosh Mukherjee, the college holds a prominent position in the academic landscape of Kolkata. 
+                    Affiliated with the renowned University of Calcutta, Asutosh College offers a diverse range of courses in arts, science, and commerce, catering to the educational needs and aspirations of students.
+                </div>
+            </div>
+            
+            <div class="about-img">
+                
+                <img class="col-img-2" src="asutosh-image/54935_img7672908378897484.jpg" alt="">
+                
+            </div>
+        </div>
+        <div class="course" id="courses">
+            <div class="course-title">
+                Courses Offered
+            </div>
+            <div class="course-title-sub">
+                We offer courses in the following departments:
+            </div>
+            <div class="course-des">
+                <div class="single-course">
+                    <div class="course-img-div">
+                        <img class="course-img" src="course-img/FE946D19-DD8A-4F50-968B5E142460AFCE_source.webp" alt="">
+                    </div>
+                    <div class="department">
+                        Physics
+                    </div>
+                    <div class="course-text">
+                        The Physics Department at Asutosh College is a prominent academic department that offers comprehensive 
+                        education and research opportunities in the field of physics. Located in Asutosh College, Kolkata, 
+                        the department is dedicated to providing a strong foundation in theoretical and experimental physics.
+                    </div>
+                    <div class="learn">
+                        <button class="learn-button">
+                            <a class="course-info" href="physics.html">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img-div">
+                        <img class="course-img" src="course-img/istockphoto-1286642964-612x612.jpg" alt="">
+                    </div>
+                    
+                    <div class="department">
+                        Statistics
+                    </div>
+                    <div class="course-text">
+                        The Statistics Department at Asutosh College is a dedicated academic department that focuses on the study 
+                        and application of statistical methods and techniques. The department offers a comprehensive education in 
+                        statistics to equip students with the necessary skills for data analysis, interpretation, and decision-making.
+                    </div>
+                    <div class="learn">
+                        <button class="learn-button">
+                            <a class="course-info" href="statistics.html">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img-div">
+                        <img class="course-img" src="course-img/iStock-856080954.webp" alt="">
+                    </div>
+                    <div class="department">
+                        Computer Science
+                    </div>
+                    <div class="course-text">
+                        The Computer Science Department at Asutosh College is a dynamic and thriving academic department that focuses on the 
+                        study and application of computer science principles and technologies. Located in Asutosh College, Kolkata, the department 
+                        offers a comprehensive curriculum to equip students with the necessary skills for a career in the rapidly evolving field of 
+                        computer science.
+                    </div>
+                    <div class="learn">
+                        <button class="learn-button">
+                            <a class="course-info" href="cs.html">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img-div">
+                        <img class="course-img" src="course-img/istockphoto-655439586-612x612.jpg" alt="">
+                    </div>
+                    <div class="department">
+                        Chemistry
+                    </div>
+                    <div class="course-text">
+                        The Chemistry Department at Asutosh College is a prominent academic department that focuses on the study and exploration of 
+                        chemical principles, reactions, and their applications. Located in Asutosh College, Kolkata, the department offers a 
+                        comprehensive curriculum that encompasses various branches of chemistry.
+                    </div>
+                    <div class="learn">
+                        <button class="learn-button">
+                            <a class="course-info" href="chemistry.html">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img-div">
+                        <img class="course-img" src="course-img/istockphoto-505973004-612x612.jpg" alt="">
+                    </div>
+                    <div class="department">
+                        Microbiology
+                    </div>
+                    <div class="course-text">
+                        The Microbiology Department at Asutosh College encourages research and provides students with opportunities to engage in 
+                        research projects, fieldwork, and industrial training. It emphasizes practical applications of microbiology in various 
+                        fields such as healthcare, agriculture, biotechnology, and environmental science.
+                    </div>
+                    <div class="learn">
+                        <button class="learn-button">
+                            <a class="course-info" href="micro.html">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clg-contact" id="contact">
+            <div class="contact-title">
+                Contact Us
+            </div>
+            <div class="clg-addresses">
+                <div class="address">
+                    Asutosh College - Main Building<br>
+                    92, Shyamaprasad Mukherjee Road<br>
+                    Kolkata - 700026<br>
+                    Mail : <a href=" mail@asutoshcollege.in "> mail@asutoshcollege.in</a>
+                    West Bengal, India<br>
+
+                </div>
+                <div class="address">
+                    Asutosh College - Training Center<br>
+                    10, Basanta Bose Road.<br>
+                    Kolkata. West Bengal. India.<br>
+                    PIN - 700 026<br>
+                </div>
+                <div class="address">
+                    Asutosh College - Humanities Block<br>
+                    16, Basanta Bose Road.<br>
+                    Kolkata. West Bengal. India.<br>
+                    PIN - 700 026<br>
+                </div>
+                <div class="address">
+                    Asutosh College - Research Center<br>
+                    128/9, Hazra Road,<br>
+                    PO: Kalighat, PS: Bhowanipore,<br>
+                    Kolkata. West Bengal. India.<br>
+                    PIN - 700 026<br>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2023 Asutosh College. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
